@@ -1,28 +1,22 @@
 import React from 'react';
 
+function Letreiro() {
+  return <h1 id="letreiro"></h1>;
+}
 
-let intervalID;
-let resp;
 let i = 0;
-function Letreiro({index}) {
-  const textoCompleto = 'Venha estudar na FATEC!';
-  
-  if (index < textoCompleto.length){
-    resp = textoCompleto.slice(0, index);
-    return(<h1>{resp}</h1>)
-  }else{
-    console.log("Todas as letras já foram exibidas!");
+const textoCompleto = 'Venha estudar na FATEC!';
+
+function tick() {
+  const elemento = document.getElementById('letreiro');
+  if (elemento && i <= textoCompleto.length) {
+    elemento.textContent = textoCompleto.slice(0, i);
+    i++;
+  } else {
     clearInterval(intervalID);
-    return(<h1>{resp}</h1>)
   }
-
 }
 
-function tick(){
-  console.log(i);
-  console.log({resp})
-  return ++i;
-}
+const intervalID = setInterval(tick, 500);
 
-intervalID = setInterval(tick, 500);
 export default Letreiro;

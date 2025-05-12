@@ -2,14 +2,13 @@ import { Link } from "react-router-dom";
 import Letreiro from "./Letreiro";
 import Relogio from "./Relogio";
 
-let i = 0;
 
 function Ativ01() {
   return (
     <>
         <h2>Semana 1</h2>
-        <Letreiro index = {i}/>
-        <Relogio />
+        <Letreiro />
+        <h1><Relogio /></h1>
         <Link to={"/"}>Voltar</Link>
     </>
   );
