@@ -14,6 +14,9 @@ const Home = () =>{
                     <li>
                         <Link to={"/Ativ02"}>Semana 2</Link>                        
                     </li>
+                    <li>
+                        <Link to={"/Ativ03"}>Semana 3</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
