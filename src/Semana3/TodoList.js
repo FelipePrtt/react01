@@ -9,6 +9,7 @@ function formatDate(date){
 const person = {
     name: 'Gregorio Y. Zara',
     theme: {
+        width: "fit-content",
         backgroundColor: 'black',
         color: 'pink'
     }
