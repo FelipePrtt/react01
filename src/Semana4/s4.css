@@ -1,0 +1,82 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+  }
+  
+  .component-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 500px;
+  }
+  
+  .component-title {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  button {
+    border: none;
+    padding: 8px 8px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #949494;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  input, textarea, select {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  textarea {
+    height: 60px;
+    width: 300px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  img {
+    max-width: 100px;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Estilo específico para o MovingDot */
+  .moving-dot-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .moving-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
